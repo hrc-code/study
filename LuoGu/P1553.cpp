@@ -51,6 +51,7 @@ char  findDelimiter(string str) {
 	return  ' ';
 }
 
+//反转加去除后导零
 string reverse(int len, string str) {
 	string s  ;
 	int zero = 0;
@@ -66,6 +67,7 @@ string reverse(int len, string str) {
 	return s;
 }
 
+//小数：反转加去除前导零
 string removeZero(string str) {
 	string s ;
 	int zero = 0;
@@ -76,6 +78,5 @@ string removeZero(string str) {
 		if (zero)
 			s += str[i];
 	}
-
 	return s;
 }
