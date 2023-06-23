@@ -321,3 +321,16 @@ ceil  天花板 向上取整
         ArrayList<String> arrayList4=new ArrayList();
 ```
 
+- 数组复制
+  - System.arraycopy;
+  - Arrays.copyOf
+
+```java
+//当目标数组容量大于等于源数组时使用
+public static native void arraycopy(Object src,  int  srcPos,
+                                        Object dest, int destPos,
+                                        int length);
+//底层使用System.arraycopy,但是无需手动创建目标数组
+ public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]> newType)
+```
+
