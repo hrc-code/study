@@ -133,95 +133,10 @@
 >
 >          - Git命令
 >
->             >  	- 配置与查看用户信息
->             >	
->             >  	  > ```java
->             >  	  > #配置用户信息
->             >  	  > git config --global user.name"用户名"
->             >  	  > git config --gloabal user.email"用户邮箱"
->             >  	  > #查看用户信息
->             >  	  > git config --global user.name
->             >  	  > git config --global user.email
->             >  	  > ```
->             >	
->             >  	- 日志命令
->             >	
->             >  	  > ```java 
->             >  	  >  #用于输出git提交日志
->             >  	  >  alias git-log='git log --pretty=oneline --all --graph --abbrev-commit'
->             >  	  >  #查看提交日志
->             >  	  >  git log 
->             >  	  >  #查看已经删除的提交记录
->             >  	  >  git reflog
->             >  	  > ```
->             >	
->             >  	- 基础命令
->             >	
->             >  	  > ```java 
->             >  	  > #初始化仓库
->             >  	  > git init  
->             >  	  > #将工作区的文件加暂存区
->             >  	  > git add 文件名  
->             >  	  > #将工作区全部的问文件加入暂存区
->             >  	  > git add .  
->             >  	  > #将暂存区的文件加入本地仓库
->             >  	  > git commit -m “注释内容”                              
->             >  	  > #将远程仓库的更新添加到本地并且执行合并操作
->             >  	  > git pull
->             >  	  > #将本地仓库的文件上传到远程仓库
->             >  	  > git push --set-upstream 远程仓库代称 本地仓库分支名：远程仓库分支名
->             >  	  > #查看文件状态
->             >  	  > git status  
->             >  	  > #版本回退
->             >  	  > git reset --hard commitID  (commitID可以通过 git log 查询)
->             >  	  > ```
->             >	
->             >  	- 分支命令
->             >	
->             >  	  > ``` java 
->             >  	  >  #查看全部的分支
->             >  	  >  git branch   
->             >  	  >  #创建分支
->             >  	  >  git branch 分支名   
->             >  	  >  #删除分支
->             >  	  >  git branch -d 分支名  
->             >  	  >  #强制性删除分支  （需要在别的分支执行该命令，不能在需要删除的分支执行该命令）
->             >  	  >  git branch -D 分支名 
->             >  	  >  #查看本地分支与远程分支的关联情况
->             >  	  >  git branch -vv
->             >  	  >  #切换分支 
->             >  	  >  git checkout  分支名  
->             >  	  >  #创建并切换分支
->             >  	  >  git checkout -b  分支名 
->             >  	  >  #将该分支合并到本分支中
->             >  	  >  git merge 需要合并的分支名  
->             >  	  > ```
->             >	
->             >  	- 远程命令
->             >	
->             >  	  > ```java 
->             >  	  >  #查看远程仓库
->             >  	  >  git remote
->             >  	  >  #添加远程仓库
->             >  	  >  git remote add 远程仓库代称（一般设为origin)   远程仓库地址   			       
->             >  	  >  #克隆远程仓库
->             >  	  >  git clone 远程仓库地址
->             >  	  >  #将远程仓库的更新添加到本地，不执行合并操作
->             >  	  >  git fetch 
->             >  	  > ```
->             >	
->             >  	- 在IDEA中集成Git
->             >	
->             >  	  > ``` java 
->             >  	  >   打开Settings->Version Control->Git
->             >  	  >   在Path to Git executable 中填入git.exe的路径（默认自动识别）
->             >  	  >   IDEA集成GitBash作为Terminal
->             >  	  >   打开Settings->Tools->Terminal
->             >  	  >   在Application settings->Shell path 中 将里面的地址改为bash.exe的地址
->             >  	  > ```
->             >
->             >  	  
->
+>             >  
+>             >		
+>             >  
+>          
 
 
 - IDEA
@@ -234,4 +149,5 @@
 
 #### 待开发模块
 
-[牛客刷题笔记](\study\md笔记\牛客Java刷题笔记.md)
+[牛客刷题笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/牛客Java刷题笔记.md)
+
