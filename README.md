@@ -116,26 +116,23 @@
 
 #### 开发工具
 
+[开发工具笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/develop/开发工具.md)
+
+可以先看笔记中的，之后修改
+
 - Git
 
 
 >          - Git相关的文件
 >
->             > gitconfig    ---git的配置文件
->             > .bash_history   ---使用过的命令行历史记录
->             > .bash_profile
->             > .bashrc  ---简化命令
->             > .gitignore  ---忽略某些文件不提交
->
+>             > 
+>             
 >          - Git经验
 >
 >             >  在用户目录下创建.bashrc文件,并在里面编写简化的指令
 >
 >          - Git命令
 >
->             >  
->             >		
->             >  
 >          
 
 
