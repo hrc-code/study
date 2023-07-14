@@ -1,7 +1,7 @@
 
 # Linux（一切皆为文件）
 
-#### 目录结构
+## 目录结构
 
 - bin  sbin（指令集合）
 - dev media（硬件）
@@ -81,8 +81,19 @@ chgrp 新属组  文件路径    == chown :新属组 文件路径
 - df
 - du
 - fdisk
-
  - su 切换用户
-
 - passwd 修改用户密码
 - mount 挂载设备  unmount 卸载设备
+
+-----------
+
+#### tree命令
+
+> ```java
+> tree -L 需要显示的子集目录
+> ```
+>
+> 
+
+----
+

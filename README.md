@@ -7,9 +7,15 @@
 
 -------------
 
+#### 学习笔记
+
+> 
+
 #### 文档学习
 
-> 1. [仓库/代码管理 | Gitee 产品文档](https://help.gitee.com/repository)
+> 1. [学习如何使用Gitee](https://help.gitee.com/repository)
+> 2. [学习如何开源](https://oschina.gitee.io/opensource-guide/)
+> 3. [学习如何使用Hexo搭建免费博客](https://hexo.io/zh-cn/docs/)
 
 ----------------
 
@@ -18,6 +24,8 @@
 
 >  1. [从零开始免费搭建自己的博客](https://yushuaigee.gitee.io/2021/01/01/从零开始免费搭建自己的博客(二)——基于 GitHub pages 建站/)
 >  2. [SSH 公钥设置 ](https://help.gitee.com/base/account/SSH公钥设置)
+>  3. [ tree命令 - 忽略某个文件夹的内容](https://blog.csdn.net/pyufftj/article/details/83102530)
+>  4. [在Git Bash 中添加tree命令](https://blog.csdn.net/qq_42605300/article/details/106245583)
 
 --------------
 
