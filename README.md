@@ -21,7 +21,7 @@
 
 --------------
 
-#### 学习路线与helper
+#### 学习路线
 
 > - 刷题
 >
@@ -41,12 +41,12 @@
 >
 > - 学习网站
 >
->   > [Git命令实战)](https://oschina.gitee.io/learn-git-branching/)
+>   > [Git命令实战](https://oschina.gitee.io/learn-git-branching/)
 
 ------------
 
 
- #### 使用的学习工具
+ #### 学习工具
 
 > - 思维导图
 >
@@ -116,9 +116,9 @@
 
 #### 开发工具
 
-[开发工具笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/develop/开发工具.md)
+ 
 
-可以先看笔记中的，之后修改
+可以先看笔记中的，之后修改和补充
 
 
 - IDEA
@@ -129,7 +129,39 @@
 
 ----------------
 
-#### 待开发模块
+#### 笔记模块
 
-[牛客刷题笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/牛客Java刷题笔记.md)
+> [牛客刷题笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/牛客Java刷题笔记.md)
+>
+>  [Linux学习笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/Linux学习.md)
+>
+> [Bug解决方案笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/Bug.md)
+>
+> [源码学习笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/源码学习.md)
+>
+> [Java学习笔记](https://gitee.com/hrc-code/study/blob/master/md笔记/Java.md)
+>
+>  [学习周报](https://gitee.com/hrc-code/study/blob/master/md笔记/周报.md)
+
+-----------
+
+#### JavaAPI文档
+
+> [JavaAPI文档学习笔记 ](https://gitee.com/hrc-code/study/blob/master/JavaAPI文档/常用API文档.md)
+
+-----
+
+#### 经典书籍学习
+
+> - [Java核心技术卷学习笔记](https://gitee.com/hrc-code/study/blob/master/经典书籍/Java核心技术卷/Java核心技术卷.md)
+
+--------
+
+#### 计算机基础学习
+
+> - [操作系统学习笔记](https://gitee.com/hrc-code/study/blob/master/计算机基础学习/操作系统/操作系统.md)
+
+-------------
+
+#### 待开发模块
 
