@@ -9,7 +9,7 @@
 
 #### 学习笔记
 
-> 
+> [学习使用Hexo搭建个人博客](https://gitee.com/hrc-code/study/blob/master/md笔记/学习笔记/Hexo搭建博客.md)
 
 #### 文档学习
 
@@ -87,7 +87,7 @@
 > - 接口测试工具
 >
 >   > [postman](https://www.postman.com/)
->   
+>
 > - 测试环境
 >
 >   > [VMware](https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html)
@@ -111,6 +111,8 @@
 >   > [迅雷](https://xl11.xunlei.com/)
 >   >
 >   > [uTools](https://u.tools/)
+>   >
+>   > [Ditto](https://ditto-cp.sourceforge.io/)
 
 ----------------
 
