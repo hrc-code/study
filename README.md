@@ -6,6 +6,10 @@
 记录我关于学习计算机的经验
 
 -------------
+#### Java学习网站
+
+[Java超全学习网站](https://how2j.cn/?p=322552)
+
 #### 学习笔记
 
 > [学习使用Hexo搭建个人博客](https://gitee.com/hrc-code/study/blob/master/md笔记/学习笔记/Hexo搭建博客.md)
@@ -15,6 +19,8 @@
 > 1. [学习如何使用Gitee](https://help.gitee.com/repository)
 > 2. [学习如何开源](https://oschina.gitee.io/opensource-guide/)
 > 3. [学习如何使用Hexo搭建免费博客](https://hexo.io/zh-cn/docs/)
+> 4. [GitHub Docs](https://docs.github.com/zh)
+> 5. [Java Documentation)](https://docs.oracle.com/en/java/index.html)
 
 ----------------
 
