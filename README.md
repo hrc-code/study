@@ -23,10 +23,11 @@
 #### 优质文章
 
 
->  1. [从零开始免费搭建自己的博客](https://yushuaigee.gitee.io/2021/01/01/从零开始免费搭建自己的博客(二)——基于 GitHub pages 建站/)
->  2. [SSH 公钥设置 ](https://help.gitee.com/base/account/SSH公钥设置)
->  3. [ tree命令 - 忽略某个文件夹的内容](https://blog.csdn.net/pyufftj/article/details/83102530)
->  4. [在Git Bash 中添加tree命令](https://blog.csdn.net/qq_42605300/article/details/106245583)
+ 1. [从零开始免费搭建自己的博客](https://yushuaigee.gitee.io/2021/01/01/从零开始免费搭建自己的博客(二)——基于 GitHub pages 建站/)
+ 2. [SSH 公钥设置 ](https://help.gitee.com/base/account/SSH公钥设置)
+ 3. [ tree命令 - 忽略某个文件夹的内容](https://blog.csdn.net/pyufftj/article/details/83102530)
+ 4. [在Git Bash 中添加tree命令](https://blog.csdn.net/qq_42605300/article/details/106245583)
+ 5. [超详细讲解Git](https://zhuanlan.zhihu.com/p/30044692)
 
 --------------
 

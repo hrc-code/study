@@ -19,35 +19,50 @@
 
 ### 基础
 
-- cd   进入目录
+进入目录
+```git 
+cd 目录名
+```
+显示目录的结构  
+```git
+ls
+```
+显示当前路径
+```git
+pwd
+```
+删除文件
+```git
+rm 文件路径
+```
 
-- ls     
-
-- pwd  显示当前路径
-
-  
-
-### 通用
-
-- rm  pathname  删除
-  1. 若需要删除目录,加上  -rf  :  rm  -rf pathname  
-- mv  oldpathname   newpathname 移动
-
+移动文件和目录
+```git
+mv  移动的目录或文件路径 目的地路径
+```
 ### 目录
-
-- mkdir  pathname  新增目录
-
+新增目录
+```git
+mkdir 新目录名
+```
+删除目录
+```git
+rm -rf 目录路径
+```
 ### 文件
-
-- touch pathname  新增文件
-#### 查看内容
-- cat  pathname  查看文件内容
-- more   pathname (分页查询文件内容)
-- head
-- tail  ()
-  
-
-##  修改文件基本属性
+新增文件
+touch pathname  
+查看文件内容
+```git
+cat 文件名
+head 文件名
+tail 文件名
+```
+分页查询文件内容
+```git
+more 文件名
+```
+修改文件基本属性
 
 - chmod
 - chown

@@ -4,7 +4,10 @@
 
 ![hrc_2023-07-16_02-50-08](开发工具/hrc_2023-07-16_02-50-08.png)
 
+学习git网站
+[超详细讲解Git](https://zhuanlan.zhihu.com/p/30044692)
 ## Git相关文件
+>  [Git文件详解](https://blog.csdn.net/mayfla/article/details/78653396)
 
 - .gitconfig ---git的配置文件
 - .bash_history  ---使用过的命令行历史记录
@@ -12,24 +15,11 @@
 - .bashrc  ---简化命令
 - .gitignore  ---忽略某些文件不提交
 
-####  设置用户信息
 
-```
-#""中的内容可以为任意值
-git config --global user.name"用户名"
-git config --gloabal user.email"用户邮箱"
-```
 
-#### 查看配置信息
+为常用指令配置别名
 
-```
-git config --global user.name
-git config --global user.email
-```
-
-#### 为常用指令配置别名
-
-在用户目录下创建.bashrc文件,并在里面编写简化的指令
+> 在用户目录下创建.bashrc文件,并在里面编写简化的指令
 
 ```
 #用于输出git提交日志
@@ -38,7 +28,9 @@ alias git-log='git log --pretty=oneline --all --graph --abbrev-commit'
 
 ### 常见问题
 
-##### 使用cat 命令时乱码
+---
+
+使用cat 命令时乱码
 
 ```
 #目前解决方案只能临时解决
@@ -46,8 +38,29 @@ cat 文件名 | iconv -f GBK -t UTF-8
 ```
 
 ### 命令
-
 ----
+
+查看文件前后差异
+
+```
+git diff 文件名
+```
+
+设置用户信息
+
+```
+#""中的内容可以为任意值
+git config --global user.name"用户名"
+git config --global user.email"用户邮箱"
+```
+
+查看配置信息
+
+```
+git config --global user.name
+git config --global user.email
+```
+
 
 初始化仓库
 
@@ -59,34 +72,65 @@ git init
 ``` 
 git log 
 ```
-查看已经删除的提交记录
+ 
+查看提交版本号
 
 ```
+
 git reflog
 ```
-查看文件状态
+
+查看文件提交状态
 
 ```
 git status  
 ```
 
-##### add相关命令
+将工作区的文件加暂存区
+
 ```
-#将工作区的文件加暂存区
+
 git add 文件名  
-#将工作区全部的问文件加入暂存区
+```
+
+将工作区全部的问文件加入暂存区
+
+```
+
 git add .  
 ```
 
+将暂存区的文件加入本地仓库
+
 ```
-#将暂存区的文件加入本地仓库
+
 git commit -m “注释内容” 
 ```
-#### 版本回退
+
+版本回退
+
+> commitID可以通过 git log 或 git reflog 查询
+
 ```
-#commitID可以通过 git log 查询
+
 git reset --hard commitID
 ```
+
+回到上一个版本
+
+```
+git reset --hard HEAD^
+
+```
+
+回到上n个版本
+
+```
+
+git reset --hard HEAD~n
+```
+
+
 
 #### 分支
 
@@ -163,7 +207,15 @@ git show-ref
 > 一个本地仓库可以关联多个远程仓库
 
 ```git
+
 git remote
+```
+
+查看更详细的远程仓库信息
+
+```
+
+git remote -v
 ```
 
 将本地仓库与远程仓库关联
