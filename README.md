@@ -28,6 +28,7 @@
  3. [ tree命令 - 忽略某个文件夹的内容](https://blog.csdn.net/pyufftj/article/details/83102530)
  4. [在Git Bash 中添加tree命令](https://blog.csdn.net/qq_42605300/article/details/106245583)
  5. [超详细讲解Git](https://zhuanlan.zhihu.com/p/30044692)
+  6. [如何阅读JDK源码](https://zhuanlan.zhihu.com/p/117259411)
 
 --------------
 

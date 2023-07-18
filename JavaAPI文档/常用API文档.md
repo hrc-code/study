@@ -8,6 +8,155 @@
 
 ------
 
+
+#### Arrays
+
+---
+
+static int hashCode(xxx[] a)
+
+> 返回数组a的散列码。xxx可以为8大基本类型和Object类型,重写父类的hashCode()
+
+static boolean equals(xxx[] a, xxx[] b)
+
+> 底层没看懂，大概a,b长度相等且各个位置元素相同返回true
+
+> - 静态方法
+>
+> > - toString()
+> > - copyOf()
+> > - copyOfRange()
+> > - sort()
+> > - binarySearch()
+> > - fill()
+> > - equals()
+>
+> ![hrc_2023-07-10_22-10-21-1689068527302](常用API文档/hrc_2023-07-10_22-10-21-1689068527302.png)
+> ![hrc_2023-07-10_22-10-29](常用API文档/hrc_2023-07-10_22-10-29-1689076566718.png)
+
+#### BigInteger
+
+> - 非静态方法
+>
+>   > - add
+>   > - subtract()
+>   > - multiply()
+>   > - divide()
+>   > - mod()
+>   > - sqrt()
+>   > - compareTo()
+>   > - valueOf()
+>
+> - 静态方法
+>   
+>   - valueOf()
+>
+> ![hrc_2023-07-14_11-45-52](常用API文档/hrc_2023-07-14_11-45-52.png)
+
+---
+
+#### BigDecimal
+
+> - 非静态方法
+>
+>   > - add()
+>   > - subtract()
+>   > - multiply()
+>   > - divide()
+>   > - compareTo()
+>
+> - 静态方法
+>
+>   > - valueOf()
+>
+> ![hrc_2023-07-14_11-46-04](常用API文档/hrc_2023-07-14_11-46-04.png)
+>
+> ![hrc_2023-07-14_11-46-10](常用API文档/hrc_2023-07-14_11-46-10.png)
+
+
+#### Console
+
+> - 静态方法
+>
+>   > - readPassword()
+>   > - readLine()
+>
+> ![hrc_2023-07-14_11-43-12](常用API文档/hrc_2023-07-14_11-43-12.png)
+
+#### Class
+
+---
+
+String getName()
+
+> 返回调用者的类名
+
+Class getSuperclass()
+
+> 以Class对象的形式返回调用者的直接父类
+
+#### Objects
+
+---
+
+static int hash(Object...objects)
+
+> 返回一个散列码，底层调用的是Arrays.hashCode(Object[] a)
+
+static boolean equals(Object a,Object b)
+
+> 调用这个方法可以不用考虑a,b是否为null
+
+static int hashCode(Object a)
+
+> 如果a为null则返回0，否则调用自身的hashCode()
+
+> - 静态方法 
+>
+> > - requireNonNull()
+> > - requireNonNullElse()
+> > - requireNonNullElseGet()
+>
+> ![hrc_2023-07-12_22-54-55](常用API文档/hrc_2023-07-12_22-54-55.png)
+
+#### Object
+
+----
+
+int hashCode()
+
+> 利用调用者的地址计算散列值
+
+Class getClass()
+
+> 返回调用者的类对象
+
+boolean equals(Object obj)
+
+> 比较调用者与otherObject的地址是否相同，建议子类重写
+
+String toString()
+
+> 将调用者变为字符串，建议子类重写
+
+#### Path
+
+> - 静态方法
+>
+>   > - of()
+>
+> ![hrc_2023-07-14_11-45-22](常用API文档/hrc_2023-07-14_11-45-22.png)
+
+#### Random
+
+> - 非静态方法
+>
+> > - Random()
+> > - nextInt()
+>
+> ![hrc_2023-07-13_19-00-36](常用API文档/hrc_2023-07-13_19-00-36.png)
+
+
 #### String
 
 > - 非静态方法
@@ -62,47 +211,13 @@
 >
 > ![hrc_2023-07-14_11-41-44](常用API文档/hrc_2023-07-14_11-41-44.png)
 
-----------------
-
-#### Arrays
+#### System
 
 > - 静态方法
 >
-> > - toString()
-> > - copyOf()
-> > - copyOfRange()
-> > - sort()
-> > - binarySearch()
-> > - fill()
-> > - equals()
+>   > - console()
 >
-> ![hrc_2023-07-10_22-10-21-1689068527302](常用API文档/hrc_2023-07-10_22-10-21-1689068527302.png)
-> ![hrc_2023-07-10_22-10-29](常用API文档/hrc_2023-07-10_22-10-29-1689076566718.png)
-
-------------
-
-#### Objects
-
-> - 静态方法 
->
-> > - requireNonNull()
-> > - requireNonNullElse()
-> > - requireNonNullElseGet()
->
-> ![hrc_2023-07-12_22-54-55](常用API文档/hrc_2023-07-12_22-54-55.png)
-
---------
-
-#### Random
-
-> - 非静态方法
->
-> > - Random()
-> > - nextInt()
->
-> ![hrc_2023-07-13_19-00-36](常用API文档/hrc_2023-07-13_19-00-36.png)
-
------
+> ![hrc_2023-07-14_11-43-05](常用API文档/hrc_2023-07-14_11-43-05.png)
 
 #### Scanner
 
@@ -122,75 +237,11 @@
 >
 >   
 
-----
-
-#### Console
-
-> - 静态方法
->
->   > - readPassword()
->   > - readLine()
->
-> ![hrc_2023-07-14_11-43-12](常用API文档/hrc_2023-07-14_11-43-12.png)
-
------
-
-#### System
-
-> - 静态方法
->
->   > - console()
->
-> ![hrc_2023-07-14_11-43-05](常用API文档/hrc_2023-07-14_11-43-05.png)
-
----------
-
-#### Path
-
-> - 静态方法
->
->   > - of()
->
-> ![hrc_2023-07-14_11-45-22](常用API文档/hrc_2023-07-14_11-45-22.png)
-
-----
-
-#### BigInteger
-
-> - 非静态方法
->
->   > - add
->   > - subtract()
->   > - multiply()
->   > - divide()
->   > - mod()
->   > - sqrt()
->   > - compareTo()
->   > - valueOf()
->
-> - 静态方法
->   - valueOf()
->
-> ![hrc_2023-07-14_11-45-52](常用API文档/hrc_2023-07-14_11-45-52.png)
+#### 包装类
 
 ---
 
-#### BigDecimal
 
-> - 非静态方法
->
->   > - add()
->   > - subtract()
->   > - multiply()
->   > - divide()
->   > - compareTo()
->
-> - 静态方法
->
->   > - valueOf()
->
-> ![hrc_2023-07-14_11-46-04](常用API文档/hrc_2023-07-14_11-46-04.png)
->
-> ![hrc_2023-07-14_11-46-10](常用API文档/hrc_2023-07-14_11-46-10.png)
+static int hashCode(xxx value)
 
----------
+> 返回给定值的散列码，这里 xxx指对应包装类类型的基本类型
