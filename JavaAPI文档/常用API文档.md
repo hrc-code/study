@@ -8,6 +8,45 @@
 
 ------
 
+#### ArrayList
+
+---
+
+> java.util.ArrayList<E>
+
+boolean add(E obj)
+
+> 在数组列表末尾添加一个元素，永远返回true
+
+int size()
+
+> 返回数组列表中元素的个数
+
+void ensureCapacity(int capacity)
+
+>  确保数组列表在不重新分配内部存储数组的情况下有足够的容量存储给定数量的元素。
+
+void trimToSize()
+
+> 将数组容量大小变为数组元素的个数
+
+E set(int index,E obj)
+
+> 更改数组列表中指定索引元素，返回之前的内容。
+
+E get(int idnex)
+
+> 返回数组列表指定索引位置的元素
+
+void  add(int index )
+
+> 将元素插入数组列表中指定索引的位置
+
+E remove(int index)
+
+> 删除数组列表中指定索引位置元素，返回被删除的元素
+
+
 
 #### Arrays
 
@@ -94,6 +133,40 @@ String getName()
 Class getSuperclass()
 
 > 以Class对象的形式返回调用者的直接父类
+
+#### Enum
+
+---
+
+> java.lang.Enum<E>  所有自定义的枚举类都是Enum的子类
+
+static Enum valueOf(Class enumClass,String name)
+
+> 返回给定类中有指定名的枚举常量
+
+String toString()
+
+> 返回枚举常量名
+
+int ordinal()
+
+> 返回枚举常量在enum声明中的位置，位置从0开始计数
+
+int compareTo(E other)
+
+> 如果枚举常量出现在other之前，返回一个负整数；如果this==other,则返回0；否则，返回一个正整数。
+
+
+
+#### NumberFormat
+
+---
+
+> java.text.NumberFormat
+
+Number parse(String s)
+
+> 将String数字转换为Number类数字
 
 #### Objects
 
