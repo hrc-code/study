@@ -45,7 +45,8 @@
 > - 局部内部类
 > - 匿名内部类 
 > - 静态内部类
-> 1.**成员内部类**
+
+ 1.**成员内部类**
 >
 > （1）该类像是外部类的一个成员，可以无条件的访问外部类的所有成员属性和成员方法（包括private成员和静态成员）；
 >
@@ -57,13 +58,14 @@
 >
 > （5）内部类可以拥有private访问权限、protected访问权限、public访问权限及包访问权限。如果成员内部类用private修饰，则只能在外部类的内部访问；如果用public修饰，则任何地方都能访问；如果用protected修饰，则只能在同一个包下或者继承外部类的情况下访问；如果是默认访问权限，则只能在同一个包下访问。外部类只能被public和包访问两种权限修饰。
 >
-> ​	2.**局部内部类**
+​	2.**局部内部类**
 >
 > （1）局部内部类是定义在一个方法或者一个作用域里面的类，它和成员内部类的区别在于局部内部类的访问仅限于方法内或者该作用域内；
 >
 > （2）局部内部类就像是方法里面的一个局部变量一样，是不能有public、protected、private以及static修饰符的。
 >
-> ​	3.**匿名内部类**
+​	3.**匿名内部类**
+>  Lambda表达式生成的匿名内部类不会生成字节码文件
 >
 > 用于方法参数、方法返回值、变量初始化
 >
@@ -73,7 +75,7 @@
 >
 > （3）匿名内部类用于继承其他类或是实现接口，并不需要增加额外的方法，**只是对继承方法的实现或是重写**。
 >
-> ​	4.**静态内部类**
+​	4.**静态内部类**
 >
 > （1）静态内部类是不需要依赖于外部类的，这点和类的静态成员属性有点类似；
 >
@@ -420,3 +422,37 @@ int b=-3;//1111 1111 1111 1101 //1111 1111 1111 1100 // 1000 0000 0000 0011
 >  非静态方法  编译看左边，运行看右边，子类若重写执行子类的方法，为重写，执行父类的方法
 
 > 字段   编译看左边，运行看左边，无法使用子类的字段，只能使用父类的字段
+
+#### 加载驱动的方法
+
+> 加载驱动就是加载各厂商对JDBC规划实现的类
+
+1. 调用方法Class.forName()
+2. 通过添加系统的jdbc.drivers属性
+3. 调用方法DriverManager.registerDriver()
+
+``` java
+
+   public static void jdbc() throws ClassNotFoundException, SQLException {
+        //加载驱动的三种方法
+        String url = null;
+        String driverName = "com.mysql.cj.jdbc.Driver";
+        String sqlString = null;
+        String result = null;
+        //加载驱动--将实现jdbc规范的类加载到方法区
+        //调用方法Class.forName()
+        //通过添加系统的jdbc.drivers属性
+         System.setProperty("jdbc.drivers",driverName);
+         //调用DriverManager.registerDriver方法注册
+//        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+        //创建连接
+        Connection connection = DriverManager.getConnection(url,"root","root");
+        //通过连接获得statement
+        Statement statement = connection.createStatement();
+        //执行sql语句
+        ResultSet resultSet = statement.executeQuery(sqlString);
+        while (resultSet.next()) {
+              result = resultSet.getString(1);
+            System.out.println(resultSet);
+        }
+```
