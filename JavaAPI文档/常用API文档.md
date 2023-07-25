@@ -126,6 +126,12 @@ static boolean equals(xxx[] a, xxx[] b)
 
 ---
 
+> java.lang.Class
+
+static Class forName(String className)
+
+> 返回一个Class对象，表示名为className的类
+
 String getName()
 
 > 返回调用者的类名
@@ -133,6 +139,16 @@ String getName()
 Class getSuperclass()
 
 > 以Class对象的形式返回调用者的直接父类
+
+#### Constructor
+
+---
+
+> java.lang.reflect.Constructor
+
+Object newInstance(Object... params)
+
+> 使用反射生成一个对象
 
 #### Enum
 
@@ -309,6 +325,16 @@ String toString()
 >   ![hrc_2023-07-14_11-42-10](常用API文档/hrc_2023-07-14_11-42-10.png)
 >
 >   
+
+#### Throwable
+
+---
+
+> java.lang.Throwable
+
+void printStackTrace()
+
+> 将异常打印到控制台
 
 #### 包装类
 
