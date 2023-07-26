@@ -462,3 +462,16 @@ int b=-3;//1111 1111 1111 1101 //1111 1111 1111 1100 // 1000 0000 0000 0011
 - 通过调用Class.forName()获取
 - 通过类名.class获取
 - 通过对象.getClass()获取
+
+#### IO
+
+- 节点流
+
+> 对具体地方的数据进读写(磁盘，内存)
+- 处理流
+
+> 将节点流作为参数，也称为包装流
+  - BufferedInputStream BufferedOutputStream
+  - BufferedReader BufferedWriter
+  - DataInputStream DataOutputStream
+  - InputStreamReader OutputStreamWriter (转换流)
