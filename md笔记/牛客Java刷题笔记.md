@@ -377,6 +377,12 @@ byte short int  char  enum  类
 
 #### 计算机基础
 
+编码
+> 在Java中一律采用Unicode编码方式，每个字符无论是中文还是英文字符都占用2个字节。
+>  在Java中class文件统一采用Unicode编码，char固定2字节，但在JVM中char类型采用UTF-16 big endian(大端存储)。
+> GBK: 中文2字节  字母1字节
+> UTF-8 : 中文 3字节  字母1字节
+
 - 位运算符
     - 按位与`&`
 
