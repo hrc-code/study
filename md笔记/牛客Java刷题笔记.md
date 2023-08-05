@@ -36,7 +36,7 @@
   | [n-m] | 表示n到m范围内中的一个数字 |
   |  \d   |      表示任何一个数字      |
   | X{m}  |          表示m个X          |
-  |  \s   |        表示匹配空格        |
+  |  \s   |      表示匹配空白字符      |
   |       |                            |
 
 
@@ -494,3 +494,45 @@ int b=-3;//1111 1111 1111 1101 //1111 1111 1111 1100 // 1000 0000 0000 0011
   - BufferedReader BufferedWriter
   - DataInputStream DataOutputStream
   - InputStreamReader OutputStreamWriter (转换流)
+
+#### Web
+
+- HttpServletResponse接口
+
+功能
+
+设置HTTP头标
+
+```java
+response.setHeader("Refresh","3");//三秒刷新一次页面
+```
+
+设置cookie
+
+```java
+response.addCookie(new Cookie("username","only"));
+```
+
+输出返回结果
+
+```java
+response.getOutPutStream.write();
+```
+
+
+
+
+
+- HttpServletRequset接口
+
+功能
+
+读取路径信息
+
+```java
+request.getRealPath("url");//虚拟路径映射为实际目录
+request.getRealPath("./");//网页所在的目录
+request.getRealPath("../");//网页所在的目录的上一层目录
+request.getContextPath();//应用的Web目录名称
+```
+
