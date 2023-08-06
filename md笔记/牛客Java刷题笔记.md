@@ -536,3 +536,20 @@ request.getRealPath("../");//网页所在的目录的上一层目录
 request.getContextPath();//应用的Web目录名称
 ```
 
+#### Java并发
+
+- CopyOnWriteArrayList类
+
+  > 使用ReentrantLock类进行加锁，对add()加锁。适用于读多写少的并发场景。写时复制，创建新的list加入写的内容，再将旧的引用指向新的list，这个过程相当耗时，写多的情况不推荐。
+
+- ReadWriteLock接口
+
+  > 适用于读多写少的并发场景。
+
+- ConcurrentHashMap类
+
+  > 读操作不需要加锁，写操作需要加锁。
+
+- volatile关键字
+
+  > volatile只保证线程在"加载数据阶段"加载的数据是最新的，不能保证线程安全性。
