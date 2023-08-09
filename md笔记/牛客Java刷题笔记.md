@@ -348,14 +348,6 @@ byte short int  char  enum  类
 >
 > - 对象为子类，调用的方法从子类向父类层层去找方法   this 为调用者
 
----------------
-
-#### 并发编程 
-- 锁
-  - synchronized修饰非静态方法锁的是this对象,修饰静态方法锁的是Class对象
-  - 同步代码块锁的是任意对象
-- Java用监视器机制实现了线程之间的同步执行
-
 ----------------------
 
 #### 接口与抽象类
@@ -499,8 +491,6 @@ int b=-3;//1111 1111 1111 1101 //1111 1111 1111 1100 // 1000 0000 0000 0011
 
 - HttpServletResponse接口
 
-功能
-
 设置HTTP头标
 
 ```java
@@ -519,13 +509,7 @@ response.addCookie(new Cookie("username","only"));
 response.getOutPutStream.write();
 ```
 
-
-
-
-
 - HttpServletRequset接口
-
-功能
 
 读取路径信息
 
@@ -535,6 +519,20 @@ request.getRealPath("./");//网页所在的目录
 request.getRealPath("../");//网页所在的目录的上一层目录
 request.getContextPath();//应用的Web目录名称
 ```
+
+##### JSP
+
+内置对象(9)
+
+- request
+- response
+- session
+- application
+- out
+- pageContext
+- config
+- page
+- execption
 
 #### Java并发
 
@@ -553,3 +551,26 @@ request.getContextPath();//应用的Web目录名称
 - volatile关键字
 
   > volatile只保证线程在"加载数据阶段"加载的数据是最新的，不能保证线程安全性。
+
+- 锁
+
+  - synchronized修饰非静态方法锁的是this对象,修饰静态方法锁的是Class对象
+  - 同步代码块锁的是任意对象
+
+- Java用监视器机制实现了线程之间的同步执行
+
+- 进程同步器
+
+  > 同步器是一些使线程能够等待另外一个线程的对象，允许它们协调工作。常用的同步器是CountDownLatch和Semaphore
+
+  - Semaphore类
+
+    > 信号量。用于表示共享资源数量。用acquire()获取资源，用release()释放资源。
+
+  - CyclicBarrier类
+
+    > 线程到达屏障后等待，当一组线程都到达屏障后才一起恢复执行。
+
+  - CountDownLatch类
+
+    > 初始时给定一个值，每次调用countDown()值减一，当值为零时阻塞的线程恢复执行。
