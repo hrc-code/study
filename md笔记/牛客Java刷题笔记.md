@@ -495,6 +495,7 @@ int b=-3;//1111 1111 1111 1101 //1111 1111 1111 1100 // 1000 0000 0000 0011
 
 ```java
 response.setHeader("Refresh","3");//三秒刷新一次页面
+response.addHeader(String name, date);
 ```
 
 设置cookie
@@ -520,7 +521,7 @@ request.getRealPath("../");//网页所在的目录的上一层目录
 request.getContextPath();//应用的Web目录名称
 ```
 
-##### JSP
+#### JSP
 
 内置对象(9)
 
@@ -574,3 +575,22 @@ request.getContextPath();//应用的Web目录名称
   - CountDownLatch类
 
     > 初始时给定一个值，每次调用countDown()值减一，当值为零时阻塞的线程恢复执行。
+  
+  问答题
+  
+  ---
+  
+  >  Callable接口与Runnable接口
+  
+  **区别**
+  
+  Callable接口的call()可以具有返回值和抛出异常，Runnable接口的run()没有返回值和不能抛出异常。
+  
+   实现Callable接口的线程存放在FutureTask类中，实现Runnable接口的线程存放在Thread类中。
+  
+  **相同点**
+  
+  线程都是使用Thread类的start()开启线程。
+  
+  
+
